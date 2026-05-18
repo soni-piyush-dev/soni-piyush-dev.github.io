@@ -722,7 +722,7 @@ function handleForm(e) {
   const name = e.target.querySelector('input[type=text]').value;
   const email = e.target.querySelector('input[type=email]').value;
   const msg = e.target.querySelector('textarea').value;
-  window.location.href = `mailto:piyush56500@gmail.com?subject=Freelance Enquiry from ${name}&body=${encodeURIComponent(msg + '\n\nFrom: ' + name + '\nReply to: ' + email)}`;
+  window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=piyush56500@gmail.com&su=${encodeURIComponent('Freelance Enquiry from ' + name)}&body=${encodeURIComponent(msg + '\n\nFrom: ' + name + '\nReply to: ' + email)}`, '_blank');
   setTimeout(() => { btn.textContent = 'Send Message →'; }, 2000);
 }
 </script>
