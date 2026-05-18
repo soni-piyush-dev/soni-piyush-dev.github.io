@@ -464,7 +464,7 @@ footer p{font-family:var(--mono);font-size:0.62rem;color:rgba(255,255,255,0.35);
   </ul>
   <div class="nav-right">
     <button class="nav-resume" onclick="openResume()">↓ Resume</button>
-    <a href="mailto:piyush56500@gmail.com" class="nav-hire">Hire Me</a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=piyush56500@gmail.com" target="_blank" class="nav-hire">Hire Me</a>
   </div>
 </nav>
 
@@ -793,7 +793,7 @@ document.getElementById('form-btn').addEventListener('click',function(){
   const s=document.getElementById('cf-subject').value.trim();
   const m=document.getElementById('cf-msg').value.trim();
   if(!n||!e||!m){alert('Please fill in your name, email and message.');return}
-  window.location.href='mailto:piyush56500@gmail.com?subject='+encodeURIComponent(s||'Portfolio Enquiry')+'&body='+encodeURIComponent('Name: '+n+'\nEmail: '+e+'\n\n'+m);
+  window.open('https://mail.google.com/mail/?view=cm&fs=1&to=piyush56500@gmail.com&su='+encodeURIComponent(s||'Portfolio Enquiry')+'&body='+encodeURIComponent('Name: '+n+'\nEmail: '+e+'\n\n'+m),'_blank');
   document.getElementById('form-success').style.display='block';
 });
 </script>
